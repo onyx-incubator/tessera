@@ -54,8 +54,8 @@ dependencies {
   testImplementation "com.github.jnr:jnr-unixsocket"
   testImplementation "org.glassfish:jakarta.el"
 
-  testImplementation "org.bouncycastle:bcpkix-jdk15on"
-  testImplementation "org.bouncycastle:bcprov-jdk15on"
+  testImplementation "org.bouncycastle:bcpkix-jdk18on"
+  testImplementation "org.bouncycastle:bcprov-jdk18on"
 
 
   testRuntimeOnly "org.eclipse.persistence:org.eclipse.persistence.moxy"
@@ -70,7 +70,7 @@ dependencies {
 
   testImplementation "org.eclipse.jetty:jetty-servlet"
 
-  testImplementation "org.yaml:snakeyaml"
+  implementation "org.yaml:snakeyaml"
 
 }
 
@@ -108,6 +108,8 @@ test {
     "**/P2pTestSuite.class",
     "**/AwsKeyVaultIT.class",
     "**/RunHashicorpIT.class",
+    //"**/RunAzureIT.class",
+    "**/AzureKeyVaultIT.class",
     "**/ThirdPartyIT.class",
     "**/CucumberTestSuite.class",
     )
