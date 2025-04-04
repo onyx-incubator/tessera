@@ -5,8 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "@actions/core": "^1.9.1",
-    "@actions/github": "^4.0.0",
-    "@octokit/rest": "^18.0.15",
+    "@actions/github": "^6.0.0",
+    "@octokit/rest": "^21.1.1",
     "yaml": "^1.10.0"
   },
   "devDependencies": {},
